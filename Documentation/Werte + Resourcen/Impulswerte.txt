@@ -1,0 +1,5 @@
+Servo:
+
+Max_links: 	180
+Mitte:		135
+Max_rechts: 	90

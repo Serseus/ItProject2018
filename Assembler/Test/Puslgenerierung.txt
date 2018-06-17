@@ -1,0 +1,23 @@
+		code at 0
+		include 5131.inc
+		
+anfang:	mov P2,#0000001b
+        lcall kurz
+        mov P2,#0000000b
+        lcall lang
+        ljmp anfang
+
+
+kurz : mov R6,#189
+kurz1: mov R7,#4
+kurz2: djnz R7,kurz2
+       djnz R6,kurz1
+       ret
+
+lang : mov R6,#250
+lang1: mov R7,#36
+lang2: djnz R7,lang2
+       djnz R6,lang1
+       ret
+
+end
