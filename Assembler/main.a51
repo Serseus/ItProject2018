@@ -91,7 +91,7 @@ RefillServo: mov DPTR,#SerLowTL
              mov ServoHighTH0,A
              ret
         
-TimeInt0:
+TimeInt0:   
 
 TimeInt1:
 

@@ -1,4 +1,4 @@
-package de.ITProject2018.Silas;
+package de.ItProject2018.Silas;
 
 import java.util.ArrayList;
 import java.util.Collections;
