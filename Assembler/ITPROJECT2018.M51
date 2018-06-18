@@ -1,0 +1,311 @@
+LX51 CODE BANKING LINKER/LOCATOR V06.20.17.263                                 06/18/18  20:24:02
+MS-DOS LX51 CODE BANKING LINKER/LOCATOR V06.20.17.263,  INVOKED BY:
+D:\Raisonance\Ride\Bin\LX51.EXE C:\Users\Silas\ItProject2018\Assembler\main.obj TO(C:\Users\Silas&
+\ItProject2018\Assembler\ItProject2018.aof) LIBPATH(D:\Raisonance\Ride\Lib\51) GENERATEDEPFILE MA&
+P IX RS(256) RSI(128) CSIZE(65536) XSIZE(65536) DEFN(XSTACKLEN,256) DEFN(TIM1_INIT,E8h) CO(0) DT(&
+0) ID(0) XD(0) BI(0) ABSCODEOFFS(0) XMLM(No,C:\Users\Silas\ItProject2018\Assembler\ItProject2018-&
+modules.Standard.xml) XMLF(No,8000,C:\Users\Silas\ItProject2018\Assembler\ItProject2018-flash.Sta&
+ndard.xml) 
+
+
+INPUT MODULES INCLUDED
+  C:\USERS\SILAS\ITPROJECT2018\ASSEMBLER\MAIN.OBJ(MAIN)
+
+
+LINK MAP OF MODULE: C:\USERS\SILAS\ITPROJECT2018\ASSEMBLER\ITPROJECT2018.AOF (ITPROJECT2018)
+
+    TYPE     BASE       LENGTH    RELOCATION     SEGMENT NAME
+    ----     ----       ------    ----------     ------------
+
+    * * * * * * *   DATA/IDATA    M E M O R Y   * * * * * * *
+    REG      0000H      0008H     ABSOLUTE       "REG BANK 0"
+
+    * * * * * * *   CODE          M E M O R Y   * * * * * * *
+    CODE     0000H      0003H     ABSOLUTE       
+    CODE     0003H      0003H     ABSOLUTE       
+             0006H      0005H                    *** GAP ***
+    CODE     000BH      0003H     ABSOLUTE       
+             000EH      0005H                    *** GAP ***
+    CODE     0013H      01C0H     ABSOLUTE       
+
+EXECUTABLE SUMMARY:
+-------------------
+    Total INTERNAL RAM storage requirement:  0008H (8)
+    Total EXTERNAL RAM storage requirement:  0000H (0)
+    Total     CODE     storage requirement:  01C9H (457)
+Note:  Summary does not include dynamic stack requirements
+
+
+REFERENCE MAP OF MODULE: C:\USERS\SILAS\ITPROJECT2018\ASSEMBLER\ITPROJECT2018.AOF (ITPROJECT2018)
+
+SEGMENT                           BI_GROUP            DT_GROUP             ID_GROUP             XD_GROUP
+  +--> CALLED SEGMENT          START    LENGTH     START    LENGTH     START    LENGTH     START    LENGTH
+--------------------------------------------------------------------------------------
+
+SYMBOL TABLE FOR C:\USERS\SILAS\ITPROJECT2018\ASSEMBLER\ITPROJECT2018.AOF(MAIN)
+--------------------------------------------------------------------------------
+
+    VALUE              TYPE               NAME
+    -----              ----               ----
+
+	-------            MODULE             MAIN
+	B:0003H            SYMBOL             LONGBITMOTOR
+	B:0002H            SYMBOL             SHORTBITMOTOR
+	D:008EH            SYMBOL             AUXR
+	B:00B9H            SYMBOL             PT0L
+	B:00DCH            SYMBOL             CCF4
+	D:009AH            SYMBOL             BRL
+	D:00CBH            SYMBOL             RCAP2H
+	D:0080H            SYMBOL             P0
+	D:0082H            SYMBOL             DPL
+	C:0067H            SYMBOL             SERVOLOW
+	D:0090H            SYMBOL             P1
+	D:0039H            SYMBOL             MOTORHIGHTL1
+	D:00D4H            SYMBOL             UEPCONX
+	B:00BDH            SYMBOL             PT2L
+	B:00C8H            SYMBOL             CP_RL2
+	B:00CBH            SYMBOL             EXEN2
+	D:00A0H            SYMBOL             P2
+	D:00F0H            SYMBOL             B
+	D:00D5H            SYMBOL             UEPRST
+	D:00C3H            SYMBOL             SPCON
+	D:00D9H            SYMBOL             CMOD
+	D:00D8H            SYMBOL             CCON
+	D:00B0H            SYMBOL             P3
+	D:0081H            SYMBOL             SP
+	B:00B8H            SYMBOL             PX0L
+	D:00CAH            SYMBOL             RCAP2L
+	D:00C0H            SYMBOL             P4
+	C:003CH            SYMBOL             MAIN
+	D:00C6H            SYMBOL             USBADDR
+	B:009CH            SYMBOL             REN
+	C:0178H            SYMBOL             SERHIGHTH
+	D:00D1H            SYMBOL             FCON
+	D:00C2H            SYMBOL             UEPIEN
+	D:00BEH            SYMBOL             USBIEN
+	D:0093H            SYMBOL             SSCON
+	B:00AFH            SYMBOL             EA
+	D:00C9H            SYMBOL             T2MOD
+	D:00C8H            SYMBOL             T2CON
+	D:00E3H            SYMBOL             UBYCTHX
+	D:00E0H            SYMBOL             ACC
+	D:00A3H            SYMBOL             PLLCON
+	B:00AEH            SYMBOL             EC
+	B:00C9H            SYMBOL             C_T2
+	D:00A6H            SYMBOL             WDTRST
+	B:00A9H            SYMBOL             ET0
+	B:00DFH            SYMBOL             CF
+	C:011DH            SYMBOL             SERHIGHTL
+	C:0067H            SYMBOL             TIMEINT0
+	D:00D2H            SYMBOL             EECON
+	D:00CEH            SYMBOL             UEPSTAX
+	D:00BCH            SYMBOL             USBCON
+	B:00ABH            SYMBOL             ET1
+	B:008DH            SYMBOL             TF0
+	C:0067H            SYMBOL             TIMEINT1
+	D:00E2H            SYMBOL             UBYCTLX
+	D:00C4H            SYMBOL             SPSTA
+	D:00A4H            SYMBOL             PLLDIV
+	B:00ADH            SYMBOL             ET2
+	D:00F9H            SYMBOL             CH
+	D:00B9H            SYMBOL             SADEN
+	B:008FH            SYMBOL             TF1
+	D:009CH            SYMBOL             KBLS
+	B:009AH            SYMBOL             RB8
+	B:00CDH            SYMBOL             RCLK
+	B:00CFH            SYMBOL             TF2
+	D:008CH            SYMBOL             TH0
+	C:0047H            SYMBOL             REFILLSERVO
+	D:0032H            SYMBOL             SERVOLOWTH0
+	B:00A8H            SYMBOL             EX0
+	B:0088H            SYMBOL             IT0
+	D:008DH            SYMBOL             TH1
+	B:00AAH            SYMBOL             EX1
+	B:009BH            SYMBOL             TB8
+	D:00A9H            SYMBOL             SADDR
+	B:00CCH            SYMBOL             TCLK
+	B:008AH            SYMBOL             IT1
+	D:00CDH            SYMBOL             TH2
+	C:0047H            SYMBOL             REFILLMOTOR
+	D:0031H            SYMBOL             SERVO
+	B:00BCH            SYMBOL             PSL
+	B:00BEH            SYMBOL             PPCL
+	D:00FAH            SYMBOL             CCAP0H
+	D:00E9H            SYMBOL             CL
+	B:0080H            SYMBOL             P0_0
+	D:0036H            SYMBOL             MOTORLOWTH1
+	D:0087H            SYMBOL             PCON
+	B:00F8H            SYMBOL             EP0INT
+	D:00FBH            SYMBOL             CCAP1H
+	D:0099H            SYMBOL             SBUF
+	D:008AH            SYMBOL             TL0
+	B:0090H            SYMBOL             P1_0
+	B:0081H            SYMBOL             P0_1
+	D:0033H            SYMBOL             SERVOLOWTL0
+	D:0030H            SYMBOL             MOTOR
+	D:00A2H            SYMBOL             AUXR1
+	B:00F9H            SYMBOL             EP1INT
+	D:00B7H            SYMBOL             IPH0
+	D:00FCH            SYMBOL             CCAP2H
+	B:009EH            SYMBOL             SM1
+	D:008BH            SYMBOL             TL1
+	B:00A0H            SYMBOL             P2_0
+	B:0091H            SYMBOL             P1_1
+	B:0082H            SYMBOL             P0_2
+	D:0085H            SYMBOL             CKSEL
+	B:00FAH            SYMBOL             EP2INT
+	D:009DH            SYMBOL             KBE
+	D:00B3H            SYMBOL             IPH1
+	D:00FDH            SYMBOL             CCAP3H
+	B:009DH            SYMBOL             SM2
+	D:00CCH            SYMBOL             TL2
+	B:00B0H            SYMBOL             P3_0
+	B:00A1H            SYMBOL             P2_1
+	B:0092H            SYMBOL             P1_2
+	B:0083H            SYMBOL             P0_3
+	B:00FBH            SYMBOL             EP3INT
+	D:00BBH            SYMBOL             UFNUMH
+	D:009EH            SYMBOL             KBF
+	D:00EAH            SYMBOL             CCAP0L
+	D:00FEH            SYMBOL             CCAP4H
+	D:0098H            SYMBOL             SCON
+	B:00C0H            SYMBOL             P4_0
+	B:00B1H            SYMBOL             P3_1
+	B:00A2H            SYMBOL             P2_2
+	B:0093H            SYMBOL             P1_3
+	B:0084H            SYMBOL             P0_4
+	C:0016H            SYMBOL             INIT
+	D:0037H            SYMBOL             MOTORLOWTL1
+	B:00FCH            SYMBOL             EP4INT
+	D:00EBH            SYMBOL             CCAP1L
+	D:00DAH            SYMBOL             CCAPM0
+	D:0089H            SYMBOL             TMOD
+	D:0088H            SYMBOL             TCON
+	B:00C1H            SYMBOL             P4_1
+	B:00B2H            SYMBOL             P3_2
+	B:00A3H            SYMBOL             P2_3
+	B:0094H            SYMBOL             P1_4
+	B:0085H            SYMBOL             P0_5
+	D:00F1H            SYMBOL             LEDCON
+	B:00FDH            SYMBOL             EP5INT
+	D:00F8H            SYMBOL             UEPINT
+	D:00BDH            SYMBOL             USBINT
+	D:00B8H            SYMBOL             IPL0
+	B:00DEH            SYMBOL             CR
+	D:00ECH            SYMBOL             CCAP2L
+	D:00DBH            SYMBOL             CCAPM1
+	B:00CEH            SYMBOL             EXF2
+	B:00B3H            SYMBOL             P3_3
+	B:00A4H            SYMBOL             P2_4
+	B:0095H            SYMBOL             P1_5
+	B:0086H            SYMBOL             P0_6
+	B:00FEH            SYMBOL             EP6INT
+	D:00B2H            SYMBOL             IPL1
+	D:00EDH            SYMBOL             CCAP3L
+	D:00DCH            SYMBOL             CCAPM2
+	B:008CH            SYMBOL             TR0
+	B:00B4H            SYMBOL             P3_4
+	B:00A5H            SYMBOL             P2_5
+	B:0096H            SYMBOL             P1_6
+	B:0087H            SYMBOL             P0_7
+	D:00BAH            SYMBOL             UFNUML
+	D:00EEH            SYMBOL             CCAP4L
+	D:00DDH            SYMBOL             CCAPM3
+	B:008EH            SYMBOL             TR1
+	B:00B5H            SYMBOL             P3_5
+	B:00A6H            SYMBOL             P2_6
+	B:0097H            SYMBOL             P1_7
+	C:00C2H            SYMBOL             SERLOWTH
+	C:003FH            SYMBOL             EXINT0
+	B:00ACH            SYMBOL             ES
+	D:00DEH            SYMBOL             CCAPM4
+	D:009BH            SYMBOL             BDRCON
+	B:00CAH            SYMBOL             TR2
+	D:00A7H            SYMBOL             WDTPRG
+	B:00B6H            SYMBOL             P3_6
+	B:00A7H            SYMBOL             P2_7
+	C:0043H            SYMBOL             EXINT1
+	B:00BBH            SYMBOL             PTIL
+	B:00B7H            SYMBOL             P3_7
+	D:00D7H            SYMBOL             UDPADDH
+	D:00C7H            SYMBOL             UEPNUM
+	B:009FH            SYMBOL             FE_SM0
+	D:00D0H            SYMBOL             PSW
+	D:0034H            SYMBOL             SERVOHIGHTH0
+	D:00CFH            SYMBOL             UEPDATX
+	B:0098H            SYMBOL             RI
+	C:0067H            SYMBOL             SERLOWTL
+	D:00C5H            SYMBOL             SPDAT
+	D:0094H            SYMBOL             SSCS
+	B:00D8H            SYMBOL             CCF0
+	D:0083H            SYMBOL             DPH
+	D:0096H            SYMBOL             SSADR
+	B:00BAH            SYMBOL             PXIL
+	B:00D9H            SYMBOL             CCF1
+	B:0099H            SYMBOL             TI
+	B:0089H            SYMBOL             IE0_
+	B:0001H            SYMBOL             LONGBITSERVO
+	B:0000H            SYMBOL             SHORTBITSERVO
+	D:0038H            SYMBOL             MOTORHIGHTH1
+	D:008FH            SYMBOL             CKCON0
+	D:00D6H            SYMBOL             UDPADDL
+	D:00A8H            SYMBOL             IE0
+	B:00DAH            SYMBOL             CCF2
+	B:008BH            SYMBOL             IE1_
+	D:0035H            SYMBOL             SERVOHIGHTL0
+	D:00AFH            SYMBOL             CKCON1
+	D:0095H            SYMBOL             SSDAT
+	D:00B1H            SYMBOL             IE1
+	B:00DBH            SYMBOL             CCF3
+	C:0000H            LINE#              19
+	C:0003H            LINE#              22
+	C:000BH            LINE#              25
+	C:0013H            LINE#              28
+	C:0016H            LINE#              30
+	C:0018H            LINE#              31
+	C:001BH            LINE#              32
+	C:001EH            LINE#              33
+	C:0021H            LINE#              34
+	C:0024H            LINE#              35
+	C:0027H            LINE#              36
+	C:0029H            LINE#              37
+	C:002BH            LINE#              38
+	C:002DH            LINE#              39
+	C:002FH            LINE#              40
+	C:0031H            LINE#              41
+	C:0033H            LINE#              42
+	C:0035H            LINE#              43
+	C:0037H            LINE#              44
+	C:0039H            LINE#              45
+	C:003CH            LINE#              49
+	C:003FH            LINE#              52
+	C:0042H            LINE#              53
+	C:0043H            LINE#              55
+	C:0046H            LINE#              56
+	C:0047H            LINE#              60
+	C:004AH            LINE#              61
+	C:004CH            LINE#              62
+	C:004DH            LINE#              63
+	C:004FH            LINE#              64
+	C:0052H            LINE#              65
+	C:0054H            LINE#              66
+	C:0055H            LINE#              67
+	C:0057H            LINE#              68
+	C:005AH            LINE#              69
+	C:005CH            LINE#              70
+	C:005DH            LINE#              71
+	C:005FH            LINE#              72
+	C:0062H            LINE#              73
+	C:0064H            LINE#              74
+	C:0065H            LINE#              75
+	-------            ENDMOD             MAIN
+
+----------------------
+SUGGESTED OPTIMIZATION
+----------------------
+Warning: 120 (78H) data bytes in the range [00H-80H] are available for storage.
+         Consider using some of these for 'data' variables in your source files.
+
+
+LINK/LOCATE RUN COMPLETE,  NO ERROR FOUND.
+

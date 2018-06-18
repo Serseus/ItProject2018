@@ -1,0 +1,4 @@
+
+<Project Header="Project 'ItProject2018'" Path=".\ItProject2018.rprj" Project="Yes" OutputFile="" sate="96" >
+	<ApplicationBuild Header="ItProject2018" Extern=".\ItProject2018.rapp" Path=".\ItProject2018.rapp" OutputFile=".\ItProject2018.aof" sate="2" />
+</Project>
