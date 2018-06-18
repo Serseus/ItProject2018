@@ -71,7 +71,7 @@ public class RaspBerrySendSerial {
         System.out.println("---------------------------");
         */
         SendMotorValue(127);
-        SendServoValue(127);
+        SendServoValue(46);
     }
 
     public void SendMotorValue(int x) throws InterruptedException {
