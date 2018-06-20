@@ -1,4 +1,4 @@
-package de.ITProject2018.Silas;
+package de.ItProject2018.Silas;
 
 import com.pi4j.io.gpio.*;
 import sun.security.util.BitArray;
@@ -49,6 +49,14 @@ public class RaspBerrySendSerial {
         OutPutPins.add(pinSendData7 = gpioController.provisionDigitalOutputPin(RaspiPin.GPIO_13, "Send Data Bit 7", PinState.HIGH));
         OutPutPins.add(pinSendData8 = gpioController.provisionDigitalOutputPin(RaspiPin.GPIO_14, "Send Data Bit 8", PinState.HIGH));
 
+        //Setze "Shutdown" Argumente (Alle Pins auf LOW)
+        for (int i = 0; i < OutPutPins.size(); i++) {
+            OutPutPins.get(i).setShutdownOptions(true, PinState.LOW);
+        }
+        pinSetMotorActive.setShutdownOptions(true, PinState.LOW);
+        pinSetServoActive.setShutdownOptions(true, PinState.LOW);
+
+        //Initialisiere Standard Werte der Ausgabe
         SetDefaultSerialValues();
     }
 
@@ -63,7 +71,7 @@ public class RaspBerrySendSerial {
         System.out.println("---------------------------");
         */
         SendMotorValue(127);
-        SendServoValue(127);
+        SendServoValue(46);
     }
 
     public void SendMotorValue(int x) throws InterruptedException {

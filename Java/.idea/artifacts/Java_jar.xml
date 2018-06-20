@@ -2,13 +2,13 @@
   <artifact type="jar" build-on-make="true" name="Java:jar">
     <output-path>$PROJECT_DIR$/out/artifacts/Java_jar</output-path>
     <root id="archive" name="Java.jar">
-      <element id="module-output" name="ItProject2018" />
-      <element id="extracted-dir" path="$USER_HOME$/ExternalLibs/junit.jar" path-in-jar="/" />
-      <element id="extracted-dir" path="$USER_HOME$/ExternalLibs/pi4j-core-sources.jar" path-in-jar="/" />
-      <element id="extracted-dir" path="$USER_HOME$/ExternalLibs/pi4j-core.jar" path-in-jar="/" />
-      <element id="extracted-dir" path="$USER_HOME$/ExternalLibs/pi4j-device.jar" path-in-jar="/" />
-      <element id="extracted-dir" path="$USER_HOME$/ExternalLibs/pi4j-example.jar" path-in-jar="/" />
-      <element id="extracted-dir" path="$USER_HOME$/ExternalLibs/pi4j-gpio-extension.jar" path-in-jar="/" />
+      <element id="module-output" name="Java" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/extLibs/pi4j/junit.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/extLibs/pi4j/pi4j-core-sources.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/extLibs/pi4j/pi4j-core.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/extLibs/pi4j/pi4j-device.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/extLibs/pi4j/pi4j-example.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/extLibs/pi4j/pi4j-gpio-extension.jar" path-in-jar="/" />
     </root>
   </artifact>
 </component>
